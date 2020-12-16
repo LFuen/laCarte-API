@@ -101,43 +101,42 @@ describe.only('Users Endpoints', () => {
         //         XSS ATTACK
         // =============================
 
-        // context(`Given an XSS attack user`, () => {
-        //     const noBuenoUser = {
-        //         id: 911,
-        //         username: 'No Bueno',
-        //         email: 'noGood@badPlace.com',            
-        //         pass: 'NotCoolBro',
-        //         pass_confirm: 'NotCoolBro',
-        //         subscription: 'No Sign Up',
-        //     }
+        context(`Given an XSS attack as a user`, () => {
+            const noBuenoUser = {
+                id: 911,
+                username: 'No Bueno',
+                email: 'noGood@badPlace.com',            
+                pass: 'NotCoolBro',
+                pass_confirm: 'NotCoolBro',
+                subscription: 'No Sign Up',
+            }
 
-        //     beforeEach(`insert mean user`, () => {
-        //         return db
-        //             .into('users')
-        //             .insert([noBuenoUser])
-        //     })
+            beforeEach(`insert mean user`, () => {
+                return db
+                    .into('users')
+                    .insert([noBuenoUser])
+            })
 
-        //     it(`removes no bueno XSS attack content`, () => {
-        //         return supertest(app)
-        //             .get(`/users/${noBuenoUser.id}`)
-        //             .expect(200)
-        //             .expect( res => {
-        //                 expect(res.body.username).to.eql(`No Bueno`)
-        //                 expect(res.body.email).to.eql(`noGood@badPlace.com`)
-        //                 expect(res.body.pass).to.eql(`NotCoolBro`)
-        //                 expect(res.body.pass_confirm).to.eql(`NotCoolBro`)
-        //                 expect(res.body.subscription).to.eql(`No Sign Up`)
-        //             })
-        //     })
+            it(`removes no bueno XSS attack content`, () => {
+                return supertest(app)
+                    .get(`/users/${noBuenoUser.id}`)
+                    .expect(200)
+                    .expect(res => {
+                        expect(res.body.username).to.eql(`No Bueno`)
+                        expect(res.body.email).to.eql(`noGood@badPlace.com`)
+                        expect(res.body.pass).to.eql(`NotCoolBro`)
+                        expect(res.body.pass_confirm).to.eql(`NotCoolBro`)
+                        expect(res.body.subscription).to.eql(`No Sign Up`)
+                    })
+            })
         })
-
     })
 
 // ====================
 //         POST
 // ====================
 
-    describe.only(`POST /users`, () => {
+    describe(`POST /users`, () => {
         it(`creates a user, responding with 201 and the new user`, () => {
             const newUser = {
                 username: 'Test User',
@@ -165,11 +164,12 @@ describe.only('Users Endpoints', () => {
                     .expect(postRes.body)
             )
         })
+    })
 
         const reqField = ['username', 'email', 'pass', 'pass_confirm', 'subscription', 'phone']
 
         reqField.forEach(field => {
-            const newUser = {
+            const newUserTest = {
                 username: 'GreatUser123',
                 email: 'someone@somewhere.com',            
                 pass: 'Test Pass',
@@ -178,11 +178,11 @@ describe.only('Users Endpoints', () => {
             }
                 
         it(`responds with 400 and an error message when the '${field}' is missing`, () => {
-            delete newUser[field]
+            delete newUserTest[field]
 
             return supertest(app)
                 .post('/users')
-                .send(newUser)
+                .send(newUserTest)
                 .expect(400, {
                     error: {message: `Missing '${field}' in the request body`}
                 })
@@ -190,4 +190,4 @@ describe.only('Users Endpoints', () => {
     })
 })
 
-// })
+

@@ -1,5 +1,6 @@
 const { expect } = require('chai')
 const knex = require('knex')
+const { Context } = require('mocha')
 const supertest = require('supertest')
 const app = require('../src/app')
 const {newOrder} = require('./orders.fixtures')
@@ -96,6 +97,42 @@ describe.only('Orders Endpoints', () => {
             } )            
             
         })
+
+        // =============================
+        //         XSS ATTACK
+        // =============================
+
+        context(`Given an xss attack on an order`, () => {
+            const badFood = {
+                id: 911,
+                prim_add: 'No Bueno Street',
+                sec_add: 'Not Good Apartment',            
+                city: 'Evil City',
+                state: 'Horrible State',
+                zip: 66666,
+                phone: '1900616905'
+            }
+
+            beforeEach(`insert bad order`, () => {
+                return db
+                    .into('orders')
+                    .insert([badFood])
+            })
+
+            it(`removes no bueno XSS attack content`, () => {
+                return supertest(app)
+                    .get(`/orders/${badFood.id}`)
+                    .expect(200)
+                    .expect(res => {
+                        expect(res.body.prim_add).to.eql('No Bueno Street')
+                        expect(res.body.sec_add).to.eql('Not Good Apartment')
+                        expect(res.body.city).to.eql('Evil City')
+                        expect(res.body.state).to.eql('Horrible State')
+                        expect(res.body.zip).to.eql(66666)
+                        expect(res.body.phone).to.eql('1900616905')
+                    })
+            })
+        })
     })
 
 // ====================
@@ -132,11 +169,12 @@ describe.only('Orders Endpoints', () => {
                     .expect(postRes.body)
             )
         })
+    })
 
-        const required = ['prim_add', 'sec_add', 'city', 'state', 'zip', 'phone']
+        const reqField = ['prim_add', 'sec_add', 'city', 'state', 'zip', 'phone']
 
-        required.forEach(field => {
-            const newOrder = {
+        reqField.forEach(field => {
+            const newOrderTest = {
                 prim_add: 'Test Address',
                 sec_add: 'Not required',            
                 city: 'Test City',
@@ -147,15 +185,14 @@ describe.only('Orders Endpoints', () => {
         
         
         it(`responds with 400 and an error message when the '${field}' is missing`, () => {
-            delete newOrder[field]
+            delete newOrderTest[field]
 
             return supertest(app)
                 .post('/orders')
-                .send(newOrder)
+                .send(newOrderTest)
                 .expect(400, {
                     error: {message: `Missing '${field}' in the request body`}
                 })
         })
-    })
     })
 })
