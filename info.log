@@ -1,0 +1,203 @@
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"name argument is required to req.get","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals/123456","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals/2","level":"error"}
+{"message":"Unauthorized request to path: /orders/123456","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders/3","level":"error"}
+{"message":"Unauthorized request to path: /orders/911","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /users/2","level":"error"}
+{"message":"Unauthorized request to path: /users/911","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals/123456","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals/2","level":"error"}
+{"message":"Unauthorized request to path: /orders/123456","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders/3","level":"error"}
+{"message":"Unauthorized request to path: /orders/911","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /users/2","level":"error"}
+{"message":"Unauthorized request to path: /users/911","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /orders/123456","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders/3","level":"error"}
+{"message":"Unauthorized request to path: /orders/911","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /orders","level":"error"}
+{"message":"Unauthorized request to path: /users/2","level":"error"}
+{"message":"Unauthorized request to path: /users/911","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /users/2","level":"error"}
+{"message":"Unauthorized request to path: /users/911","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /users/2","level":"error"}
+{"message":"Unauthorized request to path: /users/911","level":"error"}
+{"message":"user.uuid is not a function","level":"error"}
+{"message":"user.uuid is not a function","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"meal.uuid is not a function","level":"error"}
+{"message":"meal.uuid is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"preq is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"preq is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"preq is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"UsersService.adduser is not a function","level":"error"}
+{"message":"preq is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, $4, DEFAULT) returning * - null value in column \"username\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values (DEFAULT, $1, $2, $3, $4) returning * - null value in column \"email\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, DEFAULT, $2, $3, $4) returning * - null value in column \"pass\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, DEFAULT, $3, $4) returning * - null value in column \"pass_confirm\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, DEFAULT, $4) returning * - null value in column \"subscription\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, $4, DEFAULT) returning * - null value in column \"username\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values (DEFAULT, $1, $2, $3, $4) returning * - null value in column \"email\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, DEFAULT, $2, $3, $4) returning * - null value in column \"pass\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, DEFAULT, $3, $4) returning * - null value in column \"pass_confirm\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, DEFAULT, $4) returning * - null value in column \"subscription\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, $4, DEFAULT) returning * - null value in column \"username\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values (DEFAULT, $1, $2, $3, $4) returning * - null value in column \"email\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, DEFAULT, $2, $3, $4) returning * - null value in column \"pass\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, DEFAULT, $3, $4) returning * - null value in column \"pass_confirm\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"pass\", \"pass_confirm\", \"subscription\", \"username\") values ($1, $2, $3, DEFAULT, $4) returning * - null value in column \"subscription\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"Unauthorized request to path: /meals","level":"error"}
+{"message":"Unauthorized request to path: /meals/2","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"meals is not defined","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"serializeuser is not defined","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6) returning * - value \"7862616905\" is out of range for type integer","level":"error"}

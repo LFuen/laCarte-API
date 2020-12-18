@@ -6,7 +6,7 @@ const {makeMeals} = require('./meals.fixtures')
 
 
 
-describe.only('Meals Endpoints', () => {
+describe('Meals Endpoints', () => {
     let db
 
     before('make knex instance', () => {
@@ -32,6 +32,7 @@ describe.only('Meals Endpoints', () => {
             it(`responds with 200 and empty list`, () => {
                 return supertest(app)
                     .get('/meals')
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, [])
             })
         })
@@ -43,6 +44,7 @@ describe.only('Meals Endpoints', () => {
                 const mealId = 123456
                 return supertest(app)
                     .get(`/meals/${mealId}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, we don't offer that just yet!`}})
             })
         })
@@ -71,6 +73,7 @@ describe.only('Meals Endpoints', () => {
             it(`GET /meals responds with 200 and all of the meals`, () => {
                 return supertest(app)
                     .get('/meals')
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testMeals)
             })
         })
@@ -92,6 +95,7 @@ describe.only('Meals Endpoints', () => {
                 const expectedMeal = testMeals[mealId - 1]
                 return supertest(app)
                     .get(`/meals/${mealId}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedMeal)
             } )            
             

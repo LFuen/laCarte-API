@@ -6,13 +6,13 @@ const {newUser} = require('./users.fixtures')
 
 
 
-describe.only('Users Endpoints', () => {
+describe('Users Endpoints', () => {
     let db
 
     before('make knex instance', () => {
         db = knex({
             client: 'pg',
-            connection: process.env.TEST_USERS_URL
+            connection: process.env.TEST_DB_URL
         })
         app.set('db', db)
     })
@@ -24,7 +24,7 @@ describe.only('Users Endpoints', () => {
     afterEach('cleanup', () => db('users').truncate())
 
 // ====================================================
-// NO -- ORDERS -- IN DATABASE
+// NO -- users -- IN DATABASE
 // ==================================================== 
 
     describe(`GET /users`, () => {
@@ -32,6 +32,7 @@ describe.only('Users Endpoints', () => {
             it(`responds with 200 and empty list`, () => {
                 return supertest(app)
                     .get('/users')
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, [])
             })
         })
@@ -43,6 +44,7 @@ describe.only('Users Endpoints', () => {
                 const userId = 123456
                 return supertest(app)
                     .get(`/users/${userId}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, that username isn't valid!`}})
             })
         })
@@ -51,7 +53,7 @@ describe.only('Users Endpoints', () => {
 
 
 // ====================================================
-// ORDERS IN DATABASE
+// users IN DATABASE
 // ====================================================    
 
 // ====================
@@ -71,13 +73,14 @@ describe.only('Users Endpoints', () => {
             it(`GET /users responds with 200 and all of the users`, () => {
                 return supertest(app)
                     .get('/users')
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testUsers)
             })
         })
     })
 
 
-    describe.only(`GET /users/:user_id`, () => {
+    describe(`GET /users/:user_id`, () => {
         context(`Given there are users in the database`, () => {
             const testUsers = newUser()
 
@@ -92,6 +95,7 @@ describe.only('Users Endpoints', () => {
                 const expectedUser = testUsers[userId - 1]
                 return supertest(app)
                     .get(`/users/${userId}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedUser)
             } )            
             
@@ -120,6 +124,7 @@ describe.only('Users Endpoints', () => {
             it(`removes no bueno XSS attack content`, () => {
                 return supertest(app)
                     .get(`/users/${noBuenoUser.id}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200)
                     .expect(res => {
                         expect(res.body.username).to.eql(`No Bueno`)
@@ -147,6 +152,7 @@ describe.only('Users Endpoints', () => {
             }
             return supertest(app)
             .post(`/users`)
+            .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
             .send(newUser)
             .expect(201)
             .expect(res => {
@@ -161,6 +167,7 @@ describe.only('Users Endpoints', () => {
             .then(postRes => 
                 supertest(app)
                     .get(`/users/${postRes.body.id}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(postRes.body)
             )
         })
@@ -178,14 +185,56 @@ describe.only('Users Endpoints', () => {
             }
                 
         it(`responds with 400 and an error message when the '${field}' is missing`, () => {
-            delete newUserTest[field]
+            newUserTest[field] = null
 
             return supertest(app)
                 .post('/users')
+                .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .send(newUserTest)
                 .expect(400, {
-                    error: {message: `Missing '${field}' in the request body`}
+                    error: {message: `Missing '${field}' in the request body.`}
                 })
+        })
+    })
+
+// ====================
+//         DELETE
+// ====================
+
+    describe(`DELETE /users/:user_id`, () => {
+        context(`Given there are users in the database`, () => {
+            const testUsers = newUser()
+            
+            beforeEach(`insert users`, () => {
+                return db
+                    .into('users')
+                    .insert(testUsers)
+            })
+
+            it(`responds with 204 and removes the user`, () => {
+                const idToRemove = 2
+                const expectedUsers = testUsers.filter(user => user.id !== idToRemove)
+                return supertest(app)
+                    .delete(`/users/${idToRemove}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
+                    .expect(204)
+                    .then(res => 
+                        supertest(app)
+                        .get(`/users`)
+                        .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
+                        .expect(expectedUsers)
+                    )
+            })
+        })
+
+        context(`Given no users`, () => {
+            it(`responds with 404`, () => {
+                const userId = 123456
+                return supertest(app)
+                    .delete(`/users/${userId}`)
+                    .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
+                    .expect(404, {error: {message: `Sorry, that username isn't valid!`}})
+            })
         })
     })
 })

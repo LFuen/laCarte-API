@@ -1,7 +1,6 @@
 function newUser() {
     return  [
         {
-            id: 1,        
             username: 'Davet',
             email: 'random1@gmail.com',            
             pass: 'Harrisville',
@@ -9,7 +8,6 @@ function newUser() {
             subscription: 'Late Nights',
         },
         {
-            id: 2,
             username: 'Davet312',
             email: 'random2@gmail.com',            
             pass: 'Ville',
@@ -17,7 +15,6 @@ function newUser() {
             subscription: 'Straight Up Always Working',
         },
         {
-            id: 3,        
             username: 'DaveRoad',
             email: 'random3@gmail.com',            
             pass: 'Springfield',
@@ -25,7 +22,6 @@ function newUser() {
             subscription: 'Late Nights',
         },
         {
-            id: 4,
             username: 'Dave',
             email: 'random4@gmail.com',            
             pass: 'Sydney',

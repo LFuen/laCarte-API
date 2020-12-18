@@ -1,16 +1,15 @@
 const path = require('path')
-const express = reaquire('express')
+const express = require('express')
 const xss = require('xss')
 const UsersService = require('../users/usersService')
-const { v4: uuid} = require('uuid')
-const app = require("../app")
+
+
 const usersRouter = express.Router()
 const jParse = express.json()
 
 
 
 const serializeUser = user => ({
-    id: user.uuid(),
     username: xss(user.username),
     email: xss(user.email),
     pass: xss(user.pass),
@@ -18,10 +17,9 @@ const serializeUser = user => ({
     subscription: xss(user.subscription),
 })
 
-
-// =================================================
-// GET '/' and '/:user_id'
-// =================================================
+// ========================
+//         /users
+// ========================
 
 
 usersRouter
@@ -40,12 +38,12 @@ usersRouter
         for(const [key, value] of Object.entries(newUser)) {
             if(value === null) {
                 return res.status(400).json({
-                    error: {message: `Missing '${key}' in request body.`}
+                    error: {message: `Missing '${key}' in the request body.`}
                 })
             }
         }
 
-        UsersService.adduser(
+        UsersService.addUser(
             req.app.get('db'),
             newUser
         )
@@ -53,24 +51,49 @@ usersRouter
             res
                 .status(201)
                 .location(`/Users/${user.id}`)
-                .json(serializeuser(user))
+                .json(serializeUser(user))
         })
         .catch(next)
     })
 
 
+
+// ========================
+//     /users/:user_id
+// ========================
+
+
 usersRouter
     .route('/:user_id')
     .all((req, res, next) => {
-        const knexInstance = req.app.get('db')
-        UsersService.getById(knexInstance, req.params.user_id)
-            .then(user => {
-                if(!user) {
-                    return res.status(404).json({
-                        error: {message: `That user does not exist.`}
-                    })
-                }
-                res.json(serializeUser(user))
+        UsersService.getById(
+            req.app.get('db'),
+            req.params.user_id
+            )
+                .then(user => {
+                    if(!user) {
+                        return res.status(404).json({
+                            error: {message: `Sorry, that username isn't valid!`}
+                        })
+                    }
+                    res.user = user
+                    next()
+                })
+                .catch(next)
+    })
+    .get((req, res, next) => {
+        res.json(serializeUser(res.user))
+    })
+    .delete((req, res, next) => {
+        UsersService.deleteUser(
+            req.app.get('db'),
+            req.params.user_id
+        )
+            .then(() => {
+                res.status(204).end()
             })
             .catch(next)
     })
+
+
+module.exports = usersRouter

@@ -1,16 +1,13 @@
 const path = require('path')
-const express = reaquire('express')
+const express = require('express')
 const xss = require('xss')
 const OrdersService = require('../orders/ordersService')
-const { v4: uuid} = require('uuid')
-const app = require("../app")
 const ordersRouter = express.Router()
 const jParse = express.json()
 
 
 
 const serializeOrder = order => ({
-    id: order.id,
     prim_add: xss(order.prim_add),
     sec_add: xss(order.sec_add),
     city: xss(order.city),
@@ -41,7 +38,7 @@ ordersRouter
         for(const [key, value] of Object.entries(newOrder)) {
             if(value === null) {
                 return res.status(400).json({
-                    error: {message: `Missing '${key}' in request body.`}
+                    error: {message: `Missing '${key}' in the request body.`}
                 })
             }
         }
@@ -63,15 +60,34 @@ ordersRouter
 ordersRouter
     .route('/:order_id')
     .all((req, res, next) => {
-        const knexInstance = req.app.get('db')
-        OrdersService.getById(knexInstance, req.params.order_id)
-            .then(order => {
-                if(!order) {
-                    return res.status(404).json({
-                        error: {message: `That order does not exist.`}
-                    })
-                }
-                res.json(serializeOrder(order))
+        OrdersService.getById(
+            req.app.get('db'),
+            req.params.order_id
+            )
+                .then(order => {
+                    if(!order) {
+                        return res.status(404).json({
+                            error: {message: `Sorry, that order isn't valid!`}
+                        })
+                    }
+                    res.order = order
+                    next()
+                })
+                .catch(next)
+    })
+    .get((req, res, next) => {
+        res.json(serializeOrder(res.order))
+    })
+    .delete((req, res, next) => {
+        OrdersService.deleteOrder(
+            req.app.get('db'),
+            req.params.order_id
+        )
+            .then(() => {
+                res.status(204).end()
             })
             .catch(next)
     })
+
+
+module.exports = ordersRouter
