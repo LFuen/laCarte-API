@@ -42,14 +42,14 @@ describe('Orders Endpoints', () => {
     
         it(`responds with 401 Unauthorized for GET /orders`, () => {
             return supertest(app)
-                .get('/orders')
+                .get('/api/orders')
                 .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .expect(401, { error: 'Unauthorized request' })
         })
     
         it(`responds with 401 Unauthorized for POST /orders`, () => {
             return supertest(app)
-                .post('/orders')
+                .post('/api/orders')
                 .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .send({ 
                     prim_add: 'Test Address',
@@ -65,15 +65,15 @@ describe('Orders Endpoints', () => {
         it(`responds with 401 Unauthorized for GET /orders/:order_id`, () => {
             const secondOrder = testOrders[1]
             return supertest(app)
-                .get(`/orders/${secondOrder.id}`)
+                .get(`/api/orders/${secondOrder.id}`)
                 .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .expect(401, { error: 'Unauthorized request' })
         })
     
-        it(`responds with 401 Unauthorized for DELETE /orders/:order_id`, () => {
+        it(`responds with 401 Unauthorized for DELETE /api/orders/:order_id`, () => {
             const anOrder = testOrders[1]
             return supertest(app)
-                .delete(`/orders/${anOrder.id}`)
+                .delete(`/api/orders/${anOrder.id}`)
                 .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .expect(401, { error: 'Unauthorized request' })
         })
@@ -88,11 +88,11 @@ describe('Orders Endpoints', () => {
 // ====================================================    
 // ==================================================== 
 
-    describe(`GET /orders`, () => {
+    describe(`GET /api/orders`, () => {
         context('Given there are no orders in the database', () => {
             it(`responds with 200 and empty list`, () => {
                 return supertest(app)
-                    .get('/orders')
+                    .get('/api/orders')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, [])
             })
@@ -109,7 +109,7 @@ describe('Orders Endpoints', () => {
 
             it(`gets the orders from the store`, () => {
                 return supertest(app)
-                    .get('/orders')
+                    .get('/api/orders')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testOrders)
             })
@@ -126,7 +126,7 @@ describe('Orders Endpoints', () => {
 
             it(`removes no bueno XSS attack content`, () => {
                 return supertest(app)
-                    .get(`/orders`)
+                    .get(`/api/orders`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200)
                     .expect(res => {
@@ -136,19 +136,17 @@ describe('Orders Endpoints', () => {
                         expect(res.body[0].state).to.eql(expectedOrder.state)
                         expect(res.body[0].zip).to.eql(expectedOrder.zip)
                         expect(res.body[0].phone).to.eql(expectedOrder.phone)
-                    },
-                    console.log(`this is the `, res.body)
-                    )
+                    })
             })
         })
     })
 
-    describe(`GET /orders/:order_id`, () => {
+    describe(`GET /api/orders/:order_id`, () => {
         context(`Given there are no orders in the database`, () => {
             it(`responds with 404`, () => {
                 const orderId = 123456
                 return supertest(app)
-                    .get(`/orders/${orderId}`)
+                    .get(`/api/orders/${orderId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, that order isn't valid!`}
                 })
@@ -168,7 +166,7 @@ describe('Orders Endpoints', () => {
                 const orderId = 3
                 const expectedOrder = testOrders[orderId - 1]
                 return supertest(app)
-                    .get(`/orders/${orderId}`)
+                    .get(`/api/orders/${orderId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedOrder)
             })
@@ -185,7 +183,7 @@ describe('Orders Endpoints', () => {
 
             it(`removes no bueno XSS attack content`, () => {
                 return supertest(app)
-                    .get(`/orders/${badOrder.id}`)
+                    .get(`/api/orders/${badOrder.id}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200)
                     .expect(res => {
@@ -201,7 +199,7 @@ describe('Orders Endpoints', () => {
     })
 
 
-    describe(`GET /orders`, () => {
+    describe(`GET /api/orders`, () => {
         context('Given there are orders in the database', () => {
             const testOrders = newOrder()
 
@@ -211,9 +209,9 @@ describe('Orders Endpoints', () => {
                     .insert(testOrders)
             })
 
-            it(`GET /orders responds with 200 and all of the orders`, () => {
+            it(`GET /api/orders responds with 200 and all of the orders`, () => {
                 return supertest(app)
-                    .get('/orders')
+                    .get('/api/orders')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testOrders)
             })
@@ -221,7 +219,7 @@ describe('Orders Endpoints', () => {
     })
 
 
-    describe(`GET /orders/:order_id`, () => {
+    describe(`GET /api/orders/:order_id`, () => {
         context(`Given there are orders in the database`, () => {
             const testOrders = newOrder()
 
@@ -235,7 +233,7 @@ describe('Orders Endpoints', () => {
                 const orderId = 3
                 const expectedOrder = testOrders[orderId - 1]
                 return supertest(app)
-                    .get(`/orders/${orderId}`)
+                    .get(`/api/orders/${orderId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedOrder)
             } )            
@@ -265,7 +263,7 @@ describe('Orders Endpoints', () => {
 
             it(`removes no bueno XSS attack content`, () => {
                 return supertest(app)
-                    .get(`/orders/${badFood.id}`)
+                    .get(`/api/orders/${badFood.id}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200)
                     .expect(res => {
@@ -284,7 +282,7 @@ describe('Orders Endpoints', () => {
 //         POST
 // ====================
 
-    describe(`POST /orders`, () => {
+    describe(`POST /api/orders`, () => {
         const reqField = ['prim_add', 'sec_add', 'city', 'state', 'zip', 'phone']
 
         reqField.forEach(field => {
@@ -300,7 +298,7 @@ describe('Orders Endpoints', () => {
                 newOrderTest[field] = null
 
                 return supertest(app)
-                    .post('/orders')
+                    .post('/api/orders')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .send(newOrderTest)
                     .expect(400, {
@@ -319,7 +317,7 @@ describe('Orders Endpoints', () => {
                 phone: 7862616905
             }
             return supertest(app)
-            .post(`/orders`)
+            .post(`/api/orders`)
             .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
             .send(newOrder)
             .expect(201)
@@ -331,11 +329,11 @@ describe('Orders Endpoints', () => {
                 expect(res.body.zip).to.eql(newOrder.zip)
                 expect(res.body.phone).to.eql(newOrder.phone)
                 expect(res.body).to.have.property('id')
-                expect(res.headers.location).to.eql(`/orders/${res.body.id}`)
+                expect(res.headers.location).to.eql(`/api/orders/${res.body.id}`)
             })
             .then(postRes => 
                 supertest(app)
-                    .get(`/orders/${postRes.body.id}`)
+                    .get(`/api/orders/${postRes.body.id}`)
                     .expect(postRes.body)
             )
         })
@@ -347,12 +345,12 @@ describe('Orders Endpoints', () => {
 //         DELETE
 // ====================
 
-    describe(`DELETE /orders/:order_id`, () => {
+    describe(`DELETE /api/orders/:order_id`, () => {
         context(`Given no orders`, () => {
             it(`responds with 404`, () => {
                 const orderId = 123456
                 return supertest(app)
-                    .delete(`/orders/${orderId}`)
+                    .delete(`/api/orders/${orderId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, that order isn't valid!`}})
             })
@@ -371,12 +369,12 @@ describe('Orders Endpoints', () => {
                 const idToRemove = 2
                 const expectedOrders = testOrders.filter(order => order.id !== idToRemove)
                 return supertest(app)
-                    .delete(`/orders/${idToRemove}`)
+                    .delete(`/api/orders/${idToRemove}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(204)
                     .then(res => 
                         supertest(app)
-                        .get(`/orders`)
+                        .get(`/api/orders`)
                         .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                         .expect(expectedOrders)
                     )

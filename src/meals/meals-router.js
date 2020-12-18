@@ -1,4 +1,3 @@
-const path = require('path')
 const express = require('express')
 const MealsService = require('./mealsService')
 const mealsRouter = express.Router()

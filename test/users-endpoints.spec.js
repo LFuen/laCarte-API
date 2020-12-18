@@ -27,23 +27,23 @@ describe('Users Endpoints', () => {
 // NO -- users -- IN DATABASE
 // ==================================================== 
 
-    describe(`GET /users`, () => {
+    describe(`GET /api/users`, () => {
         context('Given there are no users in the database', () => {
             it(`responds with 200 and empty list`, () => {
                 return supertest(app)
-                    .get('/users')
+                    .get('/api/users')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, [])
             })
         })
     })
 
-    describe(`GET /users/:user_id`, () => {
+    describe(`GET /api/users/:user_id`, () => {
         context(`Given there are no users in the database`, () => {
             it(`responds with 404`, () => {
                 const userId = 123456
                 return supertest(app)
-                    .get(`/users/${userId}`)
+                    .get(`/api/users/${userId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, that username isn't valid!`}})
             })
@@ -60,7 +60,7 @@ describe('Users Endpoints', () => {
 //         GET
 // ====================
 
-    describe(`GET /users`, () => {
+    describe(`GET /api/users`, () => {
         context('Given there are users in the database', () => {
             const testUsers = newUser()
 
@@ -70,9 +70,9 @@ describe('Users Endpoints', () => {
                     .insert(testUsers)
             })
 
-            it(`GET /users responds with 200 and all of the users`, () => {
+            it(`GET /api/users responds with 200 and all of the users`, () => {
                 return supertest(app)
-                    .get('/users')
+                    .get('/api/users')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testUsers)
             })
@@ -80,7 +80,7 @@ describe('Users Endpoints', () => {
     })
 
 
-    describe(`GET /users/:user_id`, () => {
+    describe(`GET /api/users/:user_id`, () => {
         context(`Given there are users in the database`, () => {
             const testUsers = newUser()
 
@@ -94,7 +94,7 @@ describe('Users Endpoints', () => {
                 const userId = 2
                 const expectedUser = testUsers[userId - 1]
                 return supertest(app)
-                    .get(`/users/${userId}`)
+                    .get(`/api/users/${userId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedUser)
             } )            
@@ -123,7 +123,7 @@ describe('Users Endpoints', () => {
 
             it(`removes no bueno XSS attack content`, () => {
                 return supertest(app)
-                    .get(`/users/${noBuenoUser.id}`)
+                    .get(`/api/users/${noBuenoUser.id}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200)
                     .expect(res => {
@@ -141,7 +141,7 @@ describe('Users Endpoints', () => {
 //         POST
 // ====================
 
-    describe(`POST /users`, () => {
+    describe(`POST /api/users`, () => {
         it(`creates a user, responding with 201 and the new user`, () => {
             const newUser = {
                 username: 'Test User',
@@ -151,7 +151,7 @@ describe('Users Endpoints', () => {
                 subscription: 'Late Nights',
             }
             return supertest(app)
-            .post(`/users`)
+            .post(`/api/users`)
             .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
             .send(newUser)
             .expect(201)
@@ -166,7 +166,7 @@ describe('Users Endpoints', () => {
             })
             .then(postRes => 
                 supertest(app)
-                    .get(`/users/${postRes.body.id}`)
+                    .get(`/api/users/${postRes.body.id}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(postRes.body)
             )
@@ -188,7 +188,7 @@ describe('Users Endpoints', () => {
             newUserTest[field] = null
 
             return supertest(app)
-                .post('/users')
+                .post('/api/users')
                 .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                 .send(newUserTest)
                 .expect(400, {
@@ -201,7 +201,7 @@ describe('Users Endpoints', () => {
 //         DELETE
 // ====================
 
-    describe(`DELETE /users/:user_id`, () => {
+    describe(`DELETE /api/users/:user_id`, () => {
         context(`Given there are users in the database`, () => {
             const testUsers = newUser()
             
@@ -215,12 +215,12 @@ describe('Users Endpoints', () => {
                 const idToRemove = 2
                 const expectedUsers = testUsers.filter(user => user.id !== idToRemove)
                 return supertest(app)
-                    .delete(`/users/${idToRemove}`)
+                    .delete(`/api/users/${idToRemove}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(204)
                     .then(res => 
                         supertest(app)
-                        .get(`/users`)
+                        .get(`/api/users`)
                         .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                         .expect(expectedUsers)
                     )
@@ -231,7 +231,7 @@ describe('Users Endpoints', () => {
             it(`responds with 404`, () => {
                 const userId = 123456
                 return supertest(app)
-                    .delete(`/users/${userId}`)
+                    .delete(`/api/users/${userId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, that username isn't valid!`}})
             })

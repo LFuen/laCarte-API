@@ -23,7 +23,7 @@ const serializeOrder = order => ({
 
 
 ordersRouter
-    .route('/')
+    .route('/api/')
     .get((req, res, next) => {
         OrdersService.getAllOrders(req.app.get('db'))
         .then((order) => {
@@ -50,7 +50,7 @@ ordersRouter
         .then(order => {
             res
                 .status(201)
-                .location(`/orders/${order.id}`)
+                .location(path.posix.join(req.originalUrl, `${order.id}`))
                 .json(serializeOrder(order))
         })
         .catch(next)

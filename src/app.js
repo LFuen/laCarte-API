@@ -24,9 +24,9 @@ app.use(helmet())
 
 app.use(validateToken)
 
-app.use(mealsRouter)
-app.use(ordersRouter)
-app.use(usersRouter)
+app.use('/api/meals', mealsRouter)
+app.use('/api/orders', ordersRouter)
+app.use('/api/users', usersRouter)
 
 app.get('/api/*', (req, res) => {
     res.json({ok: true});

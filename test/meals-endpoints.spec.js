@@ -27,23 +27,23 @@ describe('Meals Endpoints', () => {
 // NO -- MEALS -- IN DATABASE
 // ==================================================== 
 
-    describe(`GET /meals`, () => {
+    describe(`GET /api/meals`, () => {
         context('Given there are no meals in the database', () => {
             it(`responds with 200 and empty list`, () => {
                 return supertest(app)
-                    .get('/meals')
+                    .get('/api/meals')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, [])
             })
         })
     })
 
-    describe(`GET /meals/:meal_id`, () => {
+    describe(`GET /api/meals/:meal_id`, () => {
         context(`Given there are no meals in the database`, () => {
             it(`responds with 404`, () => {
                 const mealId = 123456
                 return supertest(app)
-                    .get(`/meals/${mealId}`)
+                    .get(`/api/meals/${mealId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(404, {error: {message: `Sorry, we don't offer that just yet!`}})
             })
@@ -60,7 +60,7 @@ describe('Meals Endpoints', () => {
 //         GET
 // ====================
 
-    describe(`GET /meals`, () => {
+    describe(`GET /api/meals`, () => {
         context('Given there are meals in the database', () => {
             const testMeals = makeMeals()
 
@@ -70,9 +70,9 @@ describe('Meals Endpoints', () => {
                     .insert(testMeals)
             })
 
-            it(`GET /meals responds with 200 and all of the meals`, () => {
+            it(`GET /api/meals responds with 200 and all of the meals`, () => {
                 return supertest(app)
-                    .get('/meals')
+                    .get('/api/meals')
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, testMeals)
             })
@@ -80,7 +80,7 @@ describe('Meals Endpoints', () => {
     })
 
 
-    describe(`GET /meals/:meal_id`, () => {
+    describe(`GET /api/meals/:meal_id`, () => {
         context(`Given there are meals in the database`, () => {
             const testMeals = makeMeals()
 
@@ -94,7 +94,7 @@ describe('Meals Endpoints', () => {
                 const mealId = 2
                 const expectedMeal = testMeals[mealId - 1]
                 return supertest(app)
-                    .get(`/meals/${mealId}`)
+                    .get(`/api/meals/${mealId}`)
                     .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
                     .expect(200, expectedMeal)
             } )            
