@@ -1,6 +1,6 @@
-x  BEGIN;
+BEGIN;
 
-INSERT INTO meals_list
+INSERT INTO chefs
     (chef_name, bio, cuisine)
 VALUES
 ('Johnathan', 
@@ -21,7 +21,7 @@ VALUES
 
 ('Joaquin', 
 'Fake BIO goes here.',
-('French', 'Greek', 'Italian', 'Latin American', 'Mexican', 'Middle Eastern', 'Thai')),
+('French', 'Greek', 'Italian', 'Latin American', 'Mexican', 'Middle Eastern', 'Thai'));
 
 
 COMMIT;
