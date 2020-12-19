@@ -10,16 +10,13 @@ const jParse = express.json()
 
 
 const serializeUser = user => ({
+    id: user.id,
     username: xss(user.username),
     email: xss(user.email),
     pass: xss(user.pass),
     pass_confirm: xss(user.pass_confirm),
     subscription: xss(user.subscription),
 })
-
-// ========================
-//         /users
-// ========================
 
 
 usersRouter
@@ -32,8 +29,8 @@ usersRouter
         .catch(next)
     })
     .post(jParse, (req, res, next) => {
-        const {username, email, pass, pass_confirm, subscription} = req.body
-        const newUser = {username, email, pass, pass_confirm, subscription}
+        const {id, username, email, pass, pass_confirm, subscription} = req.body
+        const newUser = {id, username, email, pass, pass_confirm, subscription}
 
         for(const [key, value] of Object.entries(newUser)) {
             if(value === null) {
@@ -90,6 +87,29 @@ usersRouter
             req.params.user_id
         )
             .then(() => {
+                res.status(204).end()
+            })
+            .catch(next)
+    })
+    .patch(jParse, (req, res, next) => {
+        const {id, username, email, pass, pass_confirm, subscription} = req.body
+        const userToUpdate = {id, username, email, pass, pass_confirm, subscription}
+
+        const numberOfValues = Object.values(userToUpdate).filter(Boolean).length
+        if(numberOfValues === 0) {
+            return res.status(400).json({
+                error: {
+                    message: `Request body must contain either 'username', 'email', 'pass', 'pass_confirm', or 'subscription'`
+                }
+            })
+        }
+
+        UsersService.updateUser(
+            req.app.get('db'),
+            req.params.user_id,
+            userToUpdate
+        )
+            .then(numRowsAffected => {
                 res.status(204).end()
             })
             .catch(next)

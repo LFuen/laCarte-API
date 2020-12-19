@@ -5,6 +5,7 @@ const mealsRouter = express.Router()
 
 
 const serializeMeal = meal => ({
+    id: meal.id,
     meal_name: meal.meal_name,
     img_url: meal.img_url,
     ingredients: meal.ingredients,

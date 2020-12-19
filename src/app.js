@@ -9,16 +9,15 @@ const mealsRouter = require('./meals/meals-router')
 const ordersRouter = require('./orders/orderForm-router')
 const usersRouter = require('./users/users-router')
 const errorHandler = require('./errorHandler')
+const chefsRouter = require('./chefs/chefs-router')
 
 const PORT = process.env.PORT || 3000;
 
 const app = express()
 
-const morganOption = (NODE_ENV === 'production')
-    ? 'tiny'
-    : 'common'
-
-app.use(morgan(morganOption))
+app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
+    skip: () => NODE_ENV === 'test'
+}))
 app.use(cors())
 app.use(helmet())
 
@@ -27,10 +26,8 @@ app.use(validateToken)
 app.use('/api/meals', mealsRouter)
 app.use('/api/orders', ordersRouter)
 app.use('/api/users', usersRouter)
+app.use('/api/chefs', chefsRouter)
 
-app.get('/api/*', (req, res) => {
-    res.json({ok: true});
-});
 
 
 app.get('/', (req, res) => {

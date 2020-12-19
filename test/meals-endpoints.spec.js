@@ -23,9 +23,9 @@ describe('Meals Endpoints', () => {
 
     afterEach('cleanup', () => db('meals_list').truncate())
 
-// ====================================================
-// NO -- MEALS -- IN DATABASE
-// ==================================================== 
+// ====================
+//         GET
+// ====================
 
     describe(`GET /api/meals`, () => {
         context('Given there are no meals in the database', () => {
@@ -51,14 +51,6 @@ describe('Meals Endpoints', () => {
     })
 
 
-
-// ====================================================
-// MEALS IN DATABASE
-// ====================================================    
-
-// ====================
-//         GET
-// ====================
 
     describe(`GET /api/meals`, () => {
         context('Given there are meals in the database', () => {

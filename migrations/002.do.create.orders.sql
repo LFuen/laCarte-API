@@ -4,6 +4,6 @@ CREATE TABLE IF NOT EXISTS orders (
     sec_add varchar,
     city TEXT NOT NULL,
     state TEXT NOT NULL,
-    zip INTEGER NOT NULL,
-    phone INTEGER NOT NULL
+    zip TEXT NOT NULL,
+    phone TEXT NOT NULL
 );

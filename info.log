@@ -261,3 +261,631 @@
 {"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
 {"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
 {"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/users/undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/1","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, DEFAULT, $3, $4, $5) returning * - null value in column \"prim_add\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values (DEFAULT, $1, $2, $3, $4, $5) returning * - null value in column \"city\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, DEFAULT, $5) returning * - null value in column \"state\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, DEFAULT) returning * - null value in column \"zip\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, DEFAULT, $2, $3, $4, $5) returning * - null value in column \"phone\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, DEFAULT, $3, $4, $5) returning * - null value in column \"prim_add\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values (DEFAULT, $1, $2, $3, $4, $5) returning * - null value in column \"city\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, DEFAULT, $5) returning * - null value in column \"state\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, DEFAULT) returning * - null value in column \"zip\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, DEFAULT, $2, $3, $4, $5) returning * - null value in column \"phone\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, DEFAULT, $4, $5, $6) returning * - null value in column \"prim_add\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values (DEFAULT, $1, $2, $3, $4, $5, $6) returning * - null value in column \"city\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, DEFAULT, $6) returning * - null value in column \"state\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, DEFAULT) returning * - null value in column \"zip\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, DEFAULT, $3, $4, $5, $6) returning * - null value in column \"phone\" of relation \"orders\" violates not-null constraint","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"userToUpdate is not defined","level":"error"}
+{"message":"userToUpdate is not defined","level":"error"}
+{"message":"userToUpdate is not defined","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"Cannot read property 'select' of undefined","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"chefs\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"chefs\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"meals_list\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"users\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"chefs\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"chefs\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"meals\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"meals\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"select * from \"users\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"orders\"","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unable to acquire a connection","level":"error"}
+{"message":"ChefsService.getAllchefs is not a function","level":"error"}
+{"message":"ChefsService.getAllchefs is not a function","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}

@@ -8,6 +8,7 @@ const jParse = express.json()
 
 
 const serializeOrder = order => ({
+    id: order.id,
     prim_add: xss(order.prim_add),
     sec_add: xss(order.sec_add),
     city: xss(order.city),
@@ -23,7 +24,7 @@ const serializeOrder = order => ({
 
 
 ordersRouter
-    .route('/api/')
+    .route('/')
     .get((req, res, next) => {
         OrdersService.getAllOrders(req.app.get('db'))
         .then((order) => {
@@ -32,8 +33,8 @@ ordersRouter
         .catch(next)
     })
     .post(jParse, (req, res, next) => {
-        const {prim_add, sec_add, city, state, zip, phone} = req.body
-        const newOrder = {prim_add, sec_add, city, state, zip, phone}
+        const {id, prim_add, sec_add, city, state, zip, phone} = req.body
+        const newOrder = {id, prim_add, sec_add, city, state, zip, phone}
 
         for(const [key, value] of Object.entries(newOrder)) {
             if(value === null) {
@@ -48,6 +49,7 @@ ordersRouter
             newOrder
         )
         .then(order => {
+            console.log(order)
             res
                 .status(201)
                 .location(path.posix.join(req.originalUrl, `${order.id}`))
@@ -87,6 +89,29 @@ ordersRouter
                 res.status(204).end()
             })
             .catch(next)
+    })
+    .patch(jParse, (req, res, next) => {
+        const {id, prim_add, sec_add, city, state, zip, phone} = req.body
+        const orderToUpdate = {id, prim_add, sec_add, city, state, zip, phone}
+
+        const numberOfValues = Object.values(orderToUpdate).filter(Boolean).length
+        if(numberOfValues === 0) {
+            return res.status(400).json({
+                error: {
+                    message: `Request body must contain either 'prim_add', 'sec_add', 'city', 'state', 'zip', or 'phone'`
+                }
+            })
+        }
+
+        OrdersService.updateOrder(
+            req.app.get('db'),
+            req.params.order_id,
+            orderToUpdate
+        )
+        .then(numRowsAffected => {
+            res.status(204).end()
+        })
+        .catch(next)
     })
 
 
