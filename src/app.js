@@ -24,9 +24,9 @@ app.use(helmet())
 app.use(validateToken)
 
 app.use('/api/meals', mealsRouter)
-app.use('/api/orders', ordersRouter)
-app.use('/api/users', usersRouter)
-app.use('/api/chefs', chefsRouter)
+app.use('api/orders', ordersRouter)
+app.use('api/users', usersRouter)
+app.use('api/chefs', chefsRouter)
 
 
 
@@ -35,10 +35,6 @@ app.get('/', (req, res) => {
 })
 
 app.use(errorHandler)
-
-
-app.listen(PORT, () => console.log(`Listening on at ${PORT}`));
-
 
 
 
