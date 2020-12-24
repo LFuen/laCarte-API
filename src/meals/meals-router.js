@@ -11,7 +11,7 @@ const serializeMeal = meal => ({
     img_url: meal.img_url,
     ingredients: meal.ingredients,
     chef: meal.chef,
-    origin: meal.origin
+    cuisine_id: meal.cuisine_id
 })
 
 
@@ -23,8 +23,10 @@ const serializeMeal = meal => ({
 mealsRouter
     .route('/')
     .get((req, res, next) =>{
+        console.log("HIT MEALS");
         MealsService.getAllMeals(req.app.get('db'))
         .then((meals) => {
+            console.log(meals);
             res.json(meals.map(serializeMeal))
         })
         .catch(next)
@@ -40,6 +42,22 @@ mealsRouter
             if(!meal) {
                 return res.status(404).json({
                     error: {message: `Sorry, we don't offer that just yet!`}
+                })
+            }
+            res.json(serializeMeal(meal))
+        })
+        .catch(next)
+    })
+
+mealsRouter
+    .route('/:meal_id/:origin')
+    .get((req, res, next) => {
+        const knexInstance = req.app.get('db')
+        MealsService.getByOrder(knexInstance, req.params.meal_id, req.params.origin)
+        .then(meal => {
+            if(!meal) {
+                return res.status(404).json({
+                    error: {message: `Sorry, we don't offer dishes from that region just yet!`}
                 })
             }
             res.json(serializeMeal(meal))

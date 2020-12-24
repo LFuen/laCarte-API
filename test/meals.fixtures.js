@@ -6,7 +6,7 @@ function makeMeals() {
             img_url: 'https://grilledCheese.com',            
             ingredients: 'Cheese, Bread',
             chef: 'Melissa',
-            origin: 'US'
+            cuisine_id: 1
         },
         {
             id: 2,
@@ -14,7 +14,7 @@ function makeMeals() {
             img_url: 'https://burger.com',            
             ingredients: 'Cheese, Bread, Meat',
             chef: 'Greg',
-            origin: 'US'
+            cuisine_id: 2
         },
         {
             id: 3,
@@ -22,7 +22,7 @@ function makeMeals() {
             img_url: 'https://hamandcheese.com',            
             ingredients: 'Cheese, Bread, Ham, Mayo',
             chef: 'Alvin',
-            origin: 'Italian'
+            cuisine_id: 3
         },
         {
             id: 4,
@@ -30,7 +30,7 @@ function makeMeals() {
             img_url: 'https://fries.com',            
             ingredients: 'Potatoes',
             chef: 'Giovanni',
-            origin: 'French'
+            cuisine_id: 4
         }
     ]
 }

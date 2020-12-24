@@ -55,7 +55,8 @@ describe('Orders Endpoints', () => {
                     city: 'Test City',
                     state: 'Test State',
                     zip: 12345,
-                    phone: 7862616905
+                    phone: 7862616905, 
+                    meal: 'Test Meal'
                 })
                 .expect(401, { error: 'Unauthorized Request' })
         })
@@ -130,6 +131,7 @@ describe('Orders Endpoints', () => {
                         expect(res.body[0].state).to.eql(expectedOrder.state)
                         expect(res.body[0].zip).equal(`${expectedOrder.zip}`)
                         expect(res.body[0].phone).equal(`${expectedOrder.phone}`)
+                        expect(res.body[0].meal).to.equal(expectedOrder.meal)
                     })
             })
         })
@@ -187,6 +189,7 @@ describe('Orders Endpoints', () => {
                         expect(res.body.state).to.eql(expectedOrder.state)
                         expect(res.body.zip).equal(`${expectedOrder.zip}`)
                         expect(res.body.phone).equal(`${expectedOrder.phone}`)
+                        expect(res.body.meal).to.equal(expectedOrder.meal)
                     })
             })
         })
@@ -246,7 +249,8 @@ describe('Orders Endpoints', () => {
                 city: 'Evil City',
                 state: 'Horrible State',
                 zip: 66666,
-                phone: 1900616905
+                phone: 1900616905,
+                meal: 'Deviled Eggs'
             }
 
             beforeEach(`insert bad order`, () => {
@@ -267,6 +271,7 @@ describe('Orders Endpoints', () => {
                         expect(res.body.state).to.eql('Horrible State')
                         expect(res.body.zip).equal(`${66666}`)
                         expect(res.body.phone).equal(`${1900616905}`)
+                        expect(res.body.meal).to.equal('Deviled Eggs')
                     })
             })
         })
@@ -281,12 +286,13 @@ describe('Orders Endpoints', () => {
             field => {
             const newOrderTest = {
                 id: 1,
-                prim_add: "Test Address",
-                sec_add: "Not required",            
-                city: "Test City",
-                state: "Test State",
+                prim_add: 'Test Address',
+                sec_add: 'Not required',            
+                city: 'Test City',
+                state: 'Test State',
                 zip: 12345,
-                phone: 7862616905
+                phone: 7862616905,
+                meal: 'Test Meal'
             }
         it(`responds with 400 and an error message when the '${field}' is missing`, () => {
             newOrderTest[field] = null
@@ -309,7 +315,8 @@ describe('Orders Endpoints', () => {
                 city: 'Test City',
                 state: 'Test State',
                 zip: 12345,
-                phone: 7862616905
+                phone: 7862616905, 
+                meal: 'Test Meal'
             }
             return supertest(app)
             .post(`/api/orders`)            
@@ -323,6 +330,7 @@ describe('Orders Endpoints', () => {
                 expect(res.body.state).to.eql(newOrder.state)
                 expect(res.body.zip).equal(`${newOrder.zip}`)
                 expect(res.body.phone).equal(`${newOrder.phone}`)
+                expect(res.body.meal).to.eql(newOrder.meal)
                 // expect(res.body).to.have.property('id')
                 expect(res.headers.location).to.eql(`/api/orders/${res.body.id}`)
             })               
@@ -411,7 +419,8 @@ describe('Orders Endpoints', () => {
                     city: 'Updated City',
                     state: 'Updated State',
                     zip: '11223',
-                    phone: '7862616905'
+                    phone: '7862616905',
+                    meal: 'Updated Meal'
                 }
                 const expectedOrder = {
                     ...testOrders[idToUpdate - 1],
@@ -439,7 +448,7 @@ describe('Orders Endpoints', () => {
                     .send({ irrelevantField: 'sup yo'})
                     .expect(400, {
                         error: {
-                            message: `Request body must contain either 'prim_add', 'sec_add', 'city', 'state', 'zip', or 'phone'`
+                            message: `Request body must contain either 'prim_add', 'sec_add', 'city', 'state', 'zip', 'phone', or 'meal'`
                         }
                     })
             })

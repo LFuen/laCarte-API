@@ -9,12 +9,14 @@ const serializeChef = chef => ({
     chef_name: chef.chef_name,
     bio: chef.bio,
     cuisine: chef.cuisine,
+    schedule: chef.schedule
 })
 
 
 chefsRouter
     .route('/')
     .get((req, res, next) =>{
+        console.log('HIT CHEFS');
         ChefsService.getAllChefs(req.app.get('db'))
         .then((chefs) => {
             res.json(chefs.map(serializeChef))

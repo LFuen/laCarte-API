@@ -7,6 +7,10 @@ const MealsService = {
         return knex.from('meals_list').select('*').where('id', id).first()
     },
 
+    getByOrder(knex, origin) {
+        return knex.from('meals_list').select('*').where('origin', origin).first()
+    }
+
 }
 
 

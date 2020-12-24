@@ -1,0 +1,26 @@
+BEGIN;
+
+INSERT INTO meals_list
+    (meal_name, img_url, ingredients, chef_ids, cuisine_id)
+VALUES
+('Asian-Style Chicken Orzo Salad', 
+'https://lfuen.github.io/laCarte/images/meals/orzo.jpg',
+('Edamame',
+'Orzo',
+'Chicken',
+'Onions',
+'Pepper',
+'Vegetable Oil',
+'Sesame Oil',
+'Ginger',
+'Rice Wine Vinegar',
+'Soy Sauce',
+'Hoisin Sauce',
+'Almonds'),
+((SELECT id from chefs where chef_name = 'Johnathan'), 
+(SELECT id from chefs where chef_name = 'Francesca'), 
+(SELECT id from chefs where chef_name = 'Christian'), 
+(SELECT id from chefs where chef_name = 'Madelyn')),
+(SELECT id from cuisines where origin = 'Asian'));
+
+COMMIT;

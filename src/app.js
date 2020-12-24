@@ -10,6 +10,7 @@ const ordersRouter = require('./orders/orderForm-router')
 const usersRouter = require('./users/users-router')
 const errorHandler = require('./errorHandler')
 const chefsRouter = require('./chefs/chefs-router')
+const cuisinesRouter = require('./cuisines/cuisines-router')
 
 const PORT = process.env.PORT || 3000;
 
@@ -24,9 +25,10 @@ app.use(helmet())
 app.use(validateToken)
 
 app.use('/api/meals', mealsRouter)
-app.use('api/orders', ordersRouter)
-app.use('api/users', usersRouter)
-app.use('api/chefs', chefsRouter)
+app.use('/api/orders', ordersRouter)
+app.use('/api/users', usersRouter)
+app.use('/api/chefs', chefsRouter)
+app.use('/api/cuisines', cuisinesRouter)
 
 
 

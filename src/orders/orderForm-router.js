@@ -14,7 +14,8 @@ const serializeOrder = order => ({
     city: xss(order.city),
     state: xss(order.state),
     zip: xss(order.zip),
-    phone: xss(order.phone)
+    phone: xss(order.phone),
+    meal: xss(order.meal)
 })
 
 
@@ -33,8 +34,8 @@ ordersRouter
         .catch(next)
     })
     .post(jParse, (req, res, next) => {
-        const {id, prim_add, sec_add, city, state, zip, phone} = req.body
-        const newOrder = {id, prim_add, sec_add, city, state, zip, phone}
+        const {id, prim_add, sec_add, city, state, zip, phone, meal} = req.body
+        const newOrder = {id, prim_add, sec_add, city, state, zip, phone, meal}
 
         for(const [key, value] of Object.entries(newOrder)) {
             if(value === null) {
@@ -91,14 +92,14 @@ ordersRouter
             .catch(next)
     })
     .patch(jParse, (req, res, next) => {
-        const {id, prim_add, sec_add, city, state, zip, phone} = req.body
-        const orderToUpdate = {id, prim_add, sec_add, city, state, zip, phone}
+        const {id, prim_add, sec_add, city, state, zip, phone, meal} = req.body
+        const orderToUpdate = {id, prim_add, sec_add, city, state, zip, phone, meal}
 
         const numberOfValues = Object.values(orderToUpdate).filter(Boolean).length
         if(numberOfValues === 0) {
             return res.status(400).json({
                 error: {
-                    message: `Request body must contain either 'prim_add', 'sec_add', 'city', 'state', 'zip', or 'phone'`
+                    message: `Request body must contain either 'prim_add', 'sec_add', 'city', 'state', 'zip', 'phone', or 'meal'`
                 }
             })
         }

@@ -930,3 +930,111 @@
 {"message":"Unable to acquire a connection","level":"error"}
 {"message":"Unable to acquire a connection","level":"error"}
 {"message":"Unable to acquire a connection","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"consoler is not defined","level":"error"}
+{"message":"consoler is not defined","level":"error"}
+{"message":"consoler is not defined","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"insert into \"orders\" (\"city\", \"id\", \"meal\", \"phone\", \"prim_add\", \"sec_add\", \"state\", \"zip\") values ($1, $2, $3, $4, $5, $6, $7, $8) returning * - column \"meal\" of relation \"orders\" does not exist","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}

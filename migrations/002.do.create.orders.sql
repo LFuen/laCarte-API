@@ -5,5 +5,9 @@ CREATE TABLE IF NOT EXISTS orders (
     city TEXT NOT NULL,
     state TEXT NOT NULL,
     zip TEXT NOT NULL,
-    phone TEXT NOT NULL
+    phone TEXT NOT NULL,
+    meal TEXT NOT NULL
 );
+
+
+

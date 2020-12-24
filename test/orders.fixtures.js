@@ -7,7 +7,8 @@ function newOrder() {
             city: 'Harrisville',
             state: 'Florida',
             zip: '12345',
-            phone: '7862616905'
+            phone: '7862616905',
+            meal: 'Burger'
         },
         {
             id: 2,
@@ -16,7 +17,8 @@ function newOrder() {
             city: 'Ville',
             state: 'Maine',
             zip: '12778',
-            phone: '7862616905'
+            phone: '7862616905',
+            meal: 'Sandwich'
         },
         {
             id: 3,
@@ -25,16 +27,18 @@ function newOrder() {
             city: 'Springfield',
             state: 'Wisconsin',
             zip: '12889',
-            phone: '7862616905'
+            phone: '7862616905',
+            meal: 'Fries'
         },
         {
             id: 4,
-            prim_add: '46 Wallaby Way',
+            prim_add: '46 The Yard',
             sec_add: '',            
             city: 'Sydney',
             state: 'New York',
             zip: '90210',
-            phone: '7862616905'
+            phone: '7862616905',
+            meal: 'Milkshake'
         }
     ]
 }
@@ -47,7 +51,8 @@ function badFood() {
     city: 'Evil City',
     state: 'Horrible State',
     zip: 66666,
-    phone: 1900616905
+    phone: 1900616905,
+    meal: 'Deviled Eggs'
     }
 
     const expectedOrder = {
@@ -58,7 +63,8 @@ function badFood() {
         city: 'Evil City',
         state: 'Horrible State',
         zip: 66666,
-        phone: 1900616905
+        phone: 1900616905,
+        meal: 'Deviled Eggs'
     }
     return {
         badOrder,
