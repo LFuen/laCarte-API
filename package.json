@@ -2,7 +2,7 @@
   "name": "la-carte-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
@@ -29,7 +29,6 @@
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
     "postgrator-cli": "^3.2.0",
-    "react-scripts": "^4.0.1",
     "uuid": "^8.3.2",
     "winston": "^3.3.3",
     "xss": "^1.0.8"
