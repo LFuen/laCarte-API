@@ -1107,3 +1107,7 @@
 {"message":"Unauthorized request to path: /api/meals","level":"error"}
 {"message":"Unauthorized request to path: /api/chefs","level":"error"}
 {"message":"Unauthorized request to path: /api/cuisines","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/chefs","level":"error"}
+{"message":"Unauthorized request to path: /api/cuisines","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
