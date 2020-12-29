@@ -3,6 +3,5 @@ CREATE TABLE IF NOT EXISTS users (
     username varchar NOT NULL,
     email varchar NOT NULL,
     pass varchar NOT NULL,
-    pass_confirm varchar NOT NULL,
     subscription TEXT NOT NULL
 );

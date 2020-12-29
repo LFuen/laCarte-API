@@ -1038,3 +1038,72 @@
 {"message":"Unauthorized request to path: /api/users/2","level":"error"}
 {"message":"Unauthorized request to path: /","level":"error"}
 {"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/undefined","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"select * from \"orders\" where \"id\" = $1 limit $2 - invalid input syntax for type integer: \"undefined\"","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/16","level":"error"}
+{"message":"Unauthorized request to path: /favicon.ico","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/19","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/19","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/19","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/19","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"insert into \"users\" (\"email\", \"id\", \"pass\", \"subscription\", \"username\") values ($1, DEFAULT, $2, $3, $4) returning * - null value in column \"pass_confirm\" of relation \"users\" violates not-null constraint","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/chefs","level":"error"}
+{"message":"Unauthorized request to path: /api/cuisines","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/meals","level":"error"}
+{"message":"Unauthorized request to path: /api/chefs","level":"error"}
+{"message":"Unauthorized request to path: /api/cuisines","level":"error"}

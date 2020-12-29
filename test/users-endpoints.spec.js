@@ -53,7 +53,6 @@ describe('Users Endpoints', () => {
                     username: 'Test Username',
                     email: 'testEmail@somewhere.com',            
                     pass: 'TestPass',
-                    pass_confirm: 'TestPassConfirm',
                     subscription: 'TestSubscription',
                 })
                 .expect(401, { error: `Unauthorized Request`})
@@ -130,7 +129,6 @@ describe('Users Endpoints', () => {
                         expect(res.body[0].username).to.eql(expectedUser.username)
                         expect(res.body[0].email).to.eql(expectedUser.email)
                         expect(res.body[0].pass).to.eql(expectedUser.pass)
-                        expect(res.body[0].pass_confirm).to.eql(expectedUser.pass_confirm)
                         expect(res.body[0].subscription).to.eql(expectedUser.subscription)
                     })
             })
@@ -188,7 +186,6 @@ describe('Users Endpoints', () => {
                         expect(res.body.username).to.eql(expectedUser.username)
                         expect(res.body.email).to.eql(expectedUser.email)
                         expect(res.body.pass).to.eql(expectedUser.pass)
-                        expect(res.body.pass_confirm).to.eql(expectedUser.pass_confirm)
                         expect(res.body.subscription).to.eql(expectedUser.subscription)
                     })
             })
@@ -248,7 +245,6 @@ describe('Users Endpoints', () => {
                 username: 'No Bueno',
                 email: 'noGood@badPlace.com',            
                 pass: 'NotCoolBro',
-                pass_confirm: 'NotCoolBro',
                 subscription: 'No Sign Up',
             }
 
@@ -267,7 +263,6 @@ describe('Users Endpoints', () => {
                         expect(res.body.username).to.eql(`No Bueno`)
                         expect(res.body.email).to.eql(`noGood@badPlace.com`)
                         expect(res.body.pass).to.eql(`NotCoolBro`)
-                        expect(res.body.pass_confirm).to.eql(`NotCoolBro`)
                         expect(res.body.subscription).to.eql(`No Sign Up`)
                     })
             })
@@ -279,14 +274,13 @@ describe('Users Endpoints', () => {
 // ====================
 
     describe(`POST /api/users`, () => {
-        const reqField = ['id', 'username', 'email', 'pass', 'pass_confirm', 'subscription']
+        const reqField = ['id', 'username', 'email', 'pass', 'subscription']
 
             reqField.forEach(field => {
                 const newUserTest = {
                     username: 'Test User',
                     email: 'something@somewhere.com',            
                     pass: 'Test Pass',
-                    pass_confirm: 'Test Pass',
                     subscription: 'Late Nights',
                 }
                 it(`responds with 400 and an error message when the '${field}' is missing`, () => {
@@ -307,7 +301,6 @@ describe('Users Endpoints', () => {
                 username: 'Test User',
                 email: 'something@somewhere.com',            
                 pass: 'Test Pass',
-                pass_confirm: 'Test Pass',
                 subscription: 'Late Nights',
             }
             return supertest(app)
@@ -319,9 +312,7 @@ describe('Users Endpoints', () => {
                 expect(res.body.username).to.eql(newUser.username)
                 expect(res.body.email).to.eql(newUser.email)
                 expect(res.body.pass).to.eql(newUser.pass)
-                expect(res.body.pass_confirm).to.eql(newUser.pass_confirm)
                 expect(res.body.subscription).to.eql(newUser.subscription)
-                // expect(res.body).to.have.property('id')
                 expect(res.headers.location).to.eql(`/api/users/${res.body.id}`)
             })
             .then(postRes => 
@@ -407,7 +398,6 @@ describe('Users Endpoints', () => {
                     username: 'Update User',
                     email: 'updatedEmail@somewhere.com',            
                     pass: 'Updated Pass',
-                    pass_confirm: 'Updated Pass',
                     subscription: 'Updated Subscription',
                 }
                 const expectedUser = {
@@ -436,7 +426,7 @@ describe('Users Endpoints', () => {
                     .send({ irrelevantField: 'sup yo'})
                     .expect(400, {
                         error: {
-                            message: `Request body must contain either 'username', 'email', 'pass', 'pass_confirm', or 'subscription'`
+                            message: `Request body must contain either 'username', 'email', 'pass', or 'subscription'`
                         }
                     })
             })
