@@ -18,9 +18,9 @@ const app = express()
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
     skip: () => NODE_ENV === 'test'
 }))
-app.use(cors({
-    origin: CLIENT_ORIGIN
-}))
+app.use(cors(
+    // {origin: CLIENT_ORIGIN}
+))
 app.use(helmet())
 
 app.use(validateToken)
