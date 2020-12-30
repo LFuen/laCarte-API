@@ -50,7 +50,6 @@ ordersRouter
             newOrder
         )
         .then(order => {
-            console.log(order)
             res
                 .status(201)
                 .location(path.posix.join(req.originalUrl, `${order.id}`))

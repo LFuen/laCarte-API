@@ -12,10 +12,8 @@ const usersRouter = require('./users/users-router')
 const errorHandler = require('./errorHandler')
 const chefsRouter = require('./chefs/chefs-router')
 const cuisinesRouter = require('./cuisines/cuisines-router')
-
-const PORT = process.env.PORT || 3000;
-
 const app = express()
+
 
 app.use(morgan((NODE_ENV === 'production') ? 'tiny' : 'common', {
     skip: () => NODE_ENV === 'test'

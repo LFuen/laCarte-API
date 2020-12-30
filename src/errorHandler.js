@@ -7,7 +7,6 @@ function errorHandler(error, req, res, next) {
     if (NODE_ENV === 'production') {
         response = { error: { message: 'server error'} }
     } else {
-        console.log(error)
         logger.error(error.message)
         response = { message: error.message, error }
     }

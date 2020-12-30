@@ -4,7 +4,6 @@ const OrdersService = {
     },
 
     addOrder(knex, newOrder) {
-        console.log(newOrder)
         return knex 
             .insert(newOrder)
             .into('orders')

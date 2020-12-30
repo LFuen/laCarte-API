@@ -16,7 +16,6 @@ const serializeChef = chef => ({
 chefsRouter
     .route('/')
     .get((req, res, next) =>{
-        console.log('HIT CHEFS');
         ChefsService.getAllChefs(req.app.get('db'))
         .then((chefs) => {
             res.json(chefs.map(serializeChef))

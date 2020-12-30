@@ -23,10 +23,8 @@ const serializeMeal = meal => ({
 mealsRouter
     .route('/')
     .get((req, res, next) =>{
-        console.log("HIT MEALS");
         MealsService.getAllMeals(req.app.get('db'))
         .then((meals) => {
-            console.log(meals);
             res.json(meals.map(serializeMeal))
         })
         .catch(next)
