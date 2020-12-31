@@ -33,7 +33,7 @@ The Healthy-Meal-Alternative App for the Busy Professional.
 <br/>
 <ul>
 <li>/meals - Will allow you to GET all meals from the DB</li>
-<li>/meals/:id - Will allow you to GET a meals by ID from the DB</li>
+<li>/meals/:id - Will allow you to GET a meal by ID from the DB</li>
 <li>/chefs - Will allow you to GET all chefs from the DB</li>
 <li>/chefs/:id/ - Will allow you to GET a chef by ID from the DB</li>
 <li>/cuisines - Will allow you to GET all cuisines from the DB</li>
