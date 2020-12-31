@@ -1121,3 +1121,11 @@
 {"message":"Unauthorized request to path: /api/users","level":"error"}
 {"message":"Unauthorized request to path: /api/users/2","level":"error"}
 {"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/orders/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}
+{"message":"Unauthorized request to path: /api/users/2","level":"error"}

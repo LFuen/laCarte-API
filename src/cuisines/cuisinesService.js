@@ -1,14 +1,11 @@
 const CuisinesService = {
-    getAllCuisines(knex) {
-        return knex.select('*').from('cuisines')
-    },
+  getAllCuisines(knex) {
+    return knex.select("*").from("cuisines");
+  },
 
-    getById(knex, id) {
-        return knex.from('cuisines').select('*').where('id', id).first()
-    },
+  getById(knex, id) {
+    return knex.from("cuisines").select("*").where("id", id).first();
+  },
+};
 
-}
-
-
-
-module.exports = CuisinesService
+module.exports = CuisinesService;

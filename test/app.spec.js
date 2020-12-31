@@ -1,9 +1,10 @@
-const app = require('../src/app')
+const app = require("../src/app");
 
-describe('App', () => {
-    it('GET / responds with 200 containing "Hey now, it works!"', () => {
-        return supertest(app).get('/')
-        .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
-        .expect(200, 'Hey now, it works!')
-    })
-})
+describe("App", () => {
+  it('GET / responds with 200 containing "Hey now, it works!"', () => {
+    return supertest(app)
+      .get("/")
+      .set(`Authorization`, `Bearer ${process.env.API_TOKEN}`)
+      .expect(200, "Hey now, it works!");
+  });
+});
