@@ -1,5 +1,6 @@
 const ChefsService = {
   getAllChefs(knex) {
+    console.log(knex, 'knex printout')
     return knex.select("*").from("chefs");
   },
 
